@@ -1,0 +1,58 @@
+2011/11/01 15:09:37 [error] [exception.CException] exception 'CException' with message 'Alias "shop.ShopModule" is invalid. Make sure it points to an existing PHP file.' in Z:\home\yii-market\framework\YiiBase.php:321
+Stack trace:
+#0 Z:\home\yii-market\framework\YiiBase.php(201): YiiBase::import('shop.ShopModule', true)
+#1 Z:\home\yii-market\framework\base\CModule.php(266): YiiBase::createComponent('shop.ShopModule', 'shop', NULL, Array)
+#2 Z:\home\yii-market\framework\web\CWebApplication.php(332): CModule->getModule('shop')
+#3 Z:\home\yii-market\framework\web\CWebApplication.php(271): CWebApplication->createController('shop')
+#4 Z:\home\yii-market\framework\web\CWebApplication.php(136): CWebApplication->runController('shop')
+#5 Z:\home\yii-market\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 Z:\home\yii-market\www\index.php(13): CApplication->run()
+#7 {main} REQUEST_URI=/index.php/shop
+2011/11/01 15:09:47 [error] [exception.CException] exception 'CException' with message 'Alias "shop.ShopModule" is invalid. Make sure it points to an existing PHP file.' in Z:\home\yii-market\framework\YiiBase.php:321
+Stack trace:
+#0 Z:\home\yii-market\framework\YiiBase.php(201): YiiBase::import('shop.ShopModule', true)
+#1 Z:\home\yii-market\framework\base\CModule.php(266): YiiBase::createComponent('shop.ShopModule', 'shop', NULL, Array)
+#2 Z:\home\yii-market\framework\web\CWebApplication.php(332): CModule->getModule('shop')
+#3 Z:\home\yii-market\framework\web\CWebApplication.php(271): CWebApplication->createController('shop/install')
+#4 Z:\home\yii-market\framework\web\CWebApplication.php(136): CWebApplication->runController('shop/install')
+#5 Z:\home\yii-market\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 Z:\home\yii-market\www\index.php(13): CApplication->run()
+#7 {main} REQUEST_URI=/index.php/shop/install
+2011/11/01 15:09:51 [error] [exception.CException] exception 'CException' with message 'Alias "shop.ShopModule" is invalid. Make sure it points to an existing PHP file.' in Z:\home\yii-market\framework\YiiBase.php:321
+Stack trace:
+#0 Z:\home\yii-market\framework\YiiBase.php(201): YiiBase::import('shop.ShopModule', true)
+#1 Z:\home\yii-market\framework\base\CModule.php(266): YiiBase::createComponent('shop.ShopModule', 'shop', NULL, Array)
+#2 Z:\home\yii-market\framework\web\CWebApplication.php(332): CModule->getModule('shop')
+#3 Z:\home\yii-market\framework\web\CWebApplication.php(271): CWebApplication->createController('shop/install')
+#4 Z:\home\yii-market\framework\web\CWebApplication.php(136): CWebApplication->runController('shop/install')
+#5 Z:\home\yii-market\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 Z:\home\yii-market\www\index.php(13): CApplication->run()
+#7 {main} REQUEST_URI=/index.php/shop/install
+2011/11/01 15:13:20 [error] [exception.CException] exception 'CException' with message 'Alias "shop.ShopModule" is invalid. Make sure it points to an existing PHP file.' in Z:\home\yii-market\framework\YiiBase.php:321
+Stack trace:
+#0 Z:\home\yii-market\framework\YiiBase.php(201): YiiBase::import('shop.ShopModule', true)
+#1 Z:\home\yii-market\framework\base\CModule.php(266): YiiBase::createComponent('shop.ShopModule', 'shop', NULL, Array)
+#2 Z:\home\yii-market\framework\web\CWebApplication.php(332): CModule->getModule('shop')
+#3 Z:\home\yii-market\framework\web\CWebApplication.php(271): CWebApplication->createController('shop/install')
+#4 Z:\home\yii-market\framework\web\CWebApplication.php(136): CWebApplication->runController('shop/install')
+#5 Z:\home\yii-market\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 Z:\home\yii-market\www\index.php(13): CApplication->run()
+#7 {main} REQUEST_URI=/index.php/shop/install
+2011/11/01 16:41:05 [error] [system.db.CDbCommand] Error in preparing SQL: SET FOREIGN_KEY_CHECKS=0;
+in Z:\home\yii-market\www\protected\modules\shop\controllers\InstallController.php (30)
+in Z:\home\yii-market\www\index.php (13)
+2011/11/01 16:41:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "SET": syntax error. The SQL statement executed was: SET FOREIGN_KEY_CHECKS=0;.
+in Z:\home\yii-market\www\protected\modules\shop\controllers\InstallController.php (30)
+in Z:\home\yii-market\www\index.php (13)
+2011/11/01 16:41:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "SET": syntax error. The SQL statement executed was: SET FOREIGN_KEY_CHECKS=0;' in Z:\home\yii-market\framework\db\CDbCommand.php:336
+Stack trace:
+#0 Z:\home\yii-market\www\protected\modules\shop\controllers\InstallController.php(30): CDbCommand->execute()
+#1 Z:\home\yii-market\framework\web\actions\CInlineAction.php(50): InstallController->actionInstall()
+#2 Z:\home\yii-market\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 Z:\home\yii-market\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 Z:\home\yii-market\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 Z:\home\yii-market\framework\web\CWebApplication.php(277): CController->run('install')
+#6 Z:\home\yii-market\framework\web\CWebApplication.php(136): CWebApplication->runController('shop/install/in...')
+#7 Z:\home\yii-market\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 Z:\home\yii-market\www\index.php(13): CApplication->run()
+#9 {main} REQUEST_URI=/index.php/shop/install/install
